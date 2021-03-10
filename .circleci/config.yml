@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.5.3-node-browsers
+    - image: circleci/ruby:2.5.1-node-browsers
       environment:
         - BUNDLER_VERSION: 2.0.2
         - RAILS_ENV: 'test'
@@ -64,3 +64,19 @@ jobs:
     - store_artifacts:
         path: /tmp/test-results
         destination: test-results
+
+
+# rubocopを走らせる記述です。
+      - run:
+          name: Rubocop
+          command: bundle exec rubocop
+
+# rspecを走らせる記述です。
+      # run tests!
+      - run:
+          name: run tests
+          command: |
+            mkdir /tmp/test-results
+            TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
+              circleci tests split --split-by=timings)"
+
