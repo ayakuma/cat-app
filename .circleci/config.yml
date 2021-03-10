@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.5.1-node-browsers
+    - image: circleci/ruby:2.6.6-node-browsers
       environment:
         - BUNDLER_VERSION: 2.0.2
         - RAILS_ENV: 'test'
@@ -70,7 +70,7 @@ jobs:
   rubocop:
     working_directory: ~/cat-app 
     docker:
-      - image: circleci/ruby:2.5.1
+      - image: circleci/ruby:2.6.6
     steps:
       - checkout
       - restore_cache:
