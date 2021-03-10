@@ -1,0 +1,15 @@
+current directory: /Users/kumakiayaka/Desktop/test-app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.2/ext/bootsnap
+/Users/kumakiayaka/.rbenv/versions/2.5.1/bin/ruby -I /Users/kumakiayaka/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210308-46253-1w5xho7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kumakiayaka/Desktop/test-app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.2/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/kumakiayaka/Desktop/test-app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.2/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kumakiayaka/Desktop/test-app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.2/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210308-46253-1f04907/bootsnap
