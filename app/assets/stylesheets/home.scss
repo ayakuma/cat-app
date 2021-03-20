@@ -1,0 +1,40 @@
+.mainContainer{
+ background-image: image-url('index.jpg'); 
+ height: 400px;
+ background-repeat: no-repeat;
+ background-size: cover; 
+ position: relative;
+}
+
+.topcontents{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.topbox{
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
+  height: 250px;
+  width: 500px;
+  opacity: .8;
+  padding: 30px;
+}
+
+.footer{
+  height: 50px;
+  background-color: #F8F9FA;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer p{
+  margin: 0;
+  color: gray;
+  font-size: 13px;
+}
