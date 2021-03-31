@@ -1,0 +1,39 @@
+<div class="content">
+  <div class="contentbox show_box">
+
+    <p id="notice"><%= notice %></p>
+
+    <h2>
+      ねこの名前:<%= @cat.name %>
+    </h2>
+
+    <p>
+      <% if @cat.image? %>
+        <%= image_tag @cat.image.url, size: '200x200', class:"myimage" %>
+      <% end %>
+    </p>
+    
+    <div class="profile">
+    <p>
+      <strong>保護者名:</strong>
+      <%= @cat.user.name %> さん
+    </p>
+
+    <p>
+      <strong>都道府県:</strong>
+      <%= @cat.prefectures %>
+    </p>
+
+    <p>
+      <strong>紹介文:</strong>
+      <%= @cat.introduction %>
+    </p>
+    </div>
+
+
+    <div class="btnitems">
+      <%= link_to '編集', edit_cat_path(@cat) %> |
+      <%= link_to '戻る', cats_path %>
+    </div>
+  </div>
+</div>

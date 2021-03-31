@@ -63,7 +63,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 @insertcopying
 
 @menu
-* Introduction::                What is libffi?
+* introduction::                What is libffi?
 * Using libffi::                How to use libffi.
 * Missing Features::            Things libffi can't do.
 * Index::                       Index.
@@ -72,7 +72,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 @end ifnottex
 
 
-@node Introduction
+@node introduction
 @chapter What is libffi?
 
 Compilers for high level languages generate code that follow certain

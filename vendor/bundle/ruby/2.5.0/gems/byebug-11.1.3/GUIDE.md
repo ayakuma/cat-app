@@ -1,6 +1,6 @@
 # GUIDE
 
-## Introduction
+## introduction
 
 ### First Steps
 

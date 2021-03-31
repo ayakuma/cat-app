@@ -1,0 +1,39 @@
+<%= form_with(model: cat) do |form| %>
+  <% if cat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cat.errors.count, "error") %> prohibited this cat from being saved:</h2>
+
+      <ul>
+        <% cat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="profile">
+    <div class="field">
+      <%= form.label :name %> <br>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :prefectures %> <br>
+      <%= form.text_field :prefectures %>
+    </div>
+
+    <div class="field">
+      <%= form.label :introduction %> <br>
+      <%= form.text_area :introduction %>
+    </div>
+
+    <div class="field">
+      <%= form.label :image %> <br>
+      <%= form.file_field :image %>
+    </div> <br>
+
+    <div class="actions">
+      <%= form.submit  class:"btn btn-warning" %>
+    </div>
+  </div>
+<% end %>

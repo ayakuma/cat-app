@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :cats
+  get 'users/show'
   root 'home#index'
 
   devise_for :users, :controllers => {
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
     get "signup", :to => "users/registrations#new"
     get "login", :to => "users/sessions#new"
     get "logout", :to => "users/sessions#destroy"
+    resources :users, :only => [:show, :edit, :update]
+
   end
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

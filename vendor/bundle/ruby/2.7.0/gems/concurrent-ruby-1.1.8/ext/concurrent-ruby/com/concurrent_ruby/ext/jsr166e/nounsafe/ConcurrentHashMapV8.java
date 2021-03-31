@@ -735,7 +735,7 @@ public class ConcurrentHashMapV8<K, V>
      * hashes.)  The red-black balancing code is updated from
      * pre-jdk-collections
      * (http://gee.cs.oswego.edu/dl/classes/collections/RBCell.java)
-     * based in turn on Cormen, Leiserson, and Rivest "Introduction to
+     * based in turn on Cormen, Leiserson, and Rivest "introduction to
      * Algorithms" (CLR).
      *
      * TreeBins also maintain a separate locking discipline than

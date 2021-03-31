@@ -55,7 +55,7 @@ writing.
 [Please see the nio4r wiki](https://github.com/socketry/nio4r/wiki)
 for more detailed documentation and usage notes:
 
-* [Getting Started]: Introduction to nio4r's components
+* [Getting Started]: introduction to nio4r's components
 * [Selectors]: monitor multiple `IO` objects for readiness events
 * [Monitors]: control interests and inspect readiness for specific `IO` objects
 * [Byte Buffers]: fixed-size native buffers for high-performance I/O

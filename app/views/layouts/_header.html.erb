@@ -1,0 +1,43 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+      
+      <a class="navbar-brand" href="/"><%= image_tag 'catapp.png', :height => '60' %></a>
+
+      <div class="pull-right">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to 'マイページ', user_path(current_user), method: :delete, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '保護ねこ登録', new_cat_path(current_user), method: :delete, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '登録ねこ一覧', cats_path(current_user), method: :delete, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link' %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'ログイン', new_user_session_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '新規登録', new_user_registration_path, class: 'nav-link' %>
+              </li>
+            <% end %>
+          </ul>
+          <form class="d-flex", style="padding: 15px">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -32,7 +32,7 @@ module ActiveRecord
     # Connection pool base class for managing Active Record database
     # connections.
     #
-    # == Introduction
+    # == introduction
     #
     # A connection pool synchronizes thread access to a limited number of
     # database connections. The basic idea is that each thread checks out a

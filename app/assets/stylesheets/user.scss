@@ -1,16 +1,26 @@
-.loginform{
+.content{
 padding: 20px 80px;
+background-image: image-url('index.jpg'); 
+background-repeat: no-repeat;
+background-size: cover; 
+position: relative;
 }
 
 .contentbox{
   padding: 0.5em 1em;
   margin: 2em 0;
-  color: #5d627b;
-  background: white;
-  border-top: solid 5px #5d627b;
+  color: #6C757D;
+  background: rgba(255,255,255,0.6);
+  border-top: solid 10px #ff708d;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  border-image: linear-gradient(to right, #ffb03c, #ff708d) 1;
   text-align: center;
-  padding: 50px 0;
+  padding:  0;
+}
+
+.contentbox > h2{
+  padding: 30px;
+  margin: 0;
 }
 
 .error_list {
@@ -19,7 +29,38 @@ padding: 20px 80px;
 }
 
 .form_padding{
-  padding: 10px;
+  padding: 20px;
   max-width: 500px;
   margin: 0 auto;
+}
+
+
+.myimage{
+  object-fit: cover; 
+}
+
+.profile ul{
+  list-style: none;
+  padding: 0;
+}
+
+.profile{
+  padding: 20px;
+}
+
+.profileexit li{
+  margin: 20px;
+}
+
+.test{
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.field > span{
+  font-size: 13px;
+}
+
+.field > label{
+  margin: 10px 0 0 0 ;
 }

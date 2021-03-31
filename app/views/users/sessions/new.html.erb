@@ -1,9 +1,6 @@
-<div class="loginform">
+<div class="content">
   <div class="contentbox">
-    <div class="form_padding">
-      <a href="/"><%= image_tag 'catapp.png', :height => '60' %></a>
-    </div>
-    <h2>ログイン</h2>
+    <h3>ログイン</h3>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form_padding">
         <%= f.label :email %><br />

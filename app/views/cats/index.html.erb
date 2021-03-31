@@ -1,0 +1,36 @@
+<div class="content">
+  <div class="contentbox show_box">
+    <p id="notice"><%= notice %></p>
+    <h2><%= current_user.name %>さんの保護ねこ一覧</h2>
+    <div class="profile">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ねこ名</th>
+            <th scope="col">紹介文</th>
+            <th scope="col">画像</th>
+            <th colspan="3" scope="col"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @cats.each do |cat| %>
+            <tr>
+              <%= link_to cat do %>
+                <td><%= link_to cat.name, cat %></td>
+                <td><%= cat.introduction %></td>
+                <td>
+                  <% if cat.image? %>
+                    <%= image_tag cat.image.url, size: '100x100', class:"myimage" %>
+                  <% end %>
+                </td>
+              <% end %>
+              <td><%= link_to 'Edit', edit_cat_path(cat) %></td>
+              <td><%= link_to 'Destroy', cats_path(cat), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

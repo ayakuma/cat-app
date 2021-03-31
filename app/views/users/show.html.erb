@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="contentbox show_box">
+    <h2>マイページ</h2>
+    <% if @user.image? %>
+      <%= image_tag @user.image.url, size: '200x200', class:"myimage" %>
+    <% end %>
+    <div class="profile">
+      <ul>
+        <li>
+          <p>ユーザー名：<%= @user.name %></p>
+        </li>
+          <p>ユーザーID：<%= @user.id %> </p>
+        <li>
+          <p>Email：<%= @user.email %></p>
+        </li>
+        <li>
+          <p>プロフィール：<%= @user.introduction %></p>
+        </li>
+      </ul>
+    </div>
+    <div  class="btnitems" >
+      <%= link_to "プロフィール編集", edit_user_path(current_user), class:"btn btn-warning" %>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,16 @@ ja:
   activerecord:
     attributes:
       user: 
+        name: ニックネーム
+        introduction: プロフィール
+        image: 画像
         email: メールアドレス
         password: パスワード
         password_confirmation: パスワード再入力
         remember_me: パスワードを記憶
+        current_password: 現在のパスワード
+      cat:
+        name: ねこの名前
+        prefectures: 保護している都道府県（市区町村は任意）
+        introduction: ねこの紹介文
+        image: ねこの画像

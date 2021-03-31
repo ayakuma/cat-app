@@ -1,0 +1,27 @@
+<div class="content">
+  <div class="contentbox show_box">
+    <h2>プロフィール編集</h2>
+    <div class="profile profileexit">
+      <%= form_for (@user) do |f| %>
+        <ul>
+          <li>
+            <%= f.label :name %>
+            <%= f.text_field :name %> <br>
+          </li>
+          <li>
+            <%= f.label :introduction, class:"test" %>
+            <%= f.text_area :introduction %> <br>
+          </li>
+          <li>
+            <%= f.label :image %>
+            <%= f.file_field :image %> <br>
+          </li>
+        </ul>
+        <%= f.submit "保存", :confirm => '送信してもよろしいですか？', class:"btn btn-warning"  %>
+      <% end %>
+    </div>
+    <div  class="btnitems" >
+      <%= link_to 'Email・パスワード変更', edit_user_registration_path %> <br>
+    </div>
+  </div>
+</div>

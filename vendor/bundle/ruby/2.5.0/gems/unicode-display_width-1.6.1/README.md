@@ -8,7 +8,7 @@ Supported Rubies: **2.7**, **2.6**, **2.5**, **2.4**
 
 Old Rubies that might still work: **2.3**, **2.2**, **2.1**, **2.0**, **1.9**
 
-## Introduction to Character Widths
+## introduction to Character Widths
 
 Guessing the correct space a character will consume on terminals is not easy. There is no single standard. Most implementations combine data from [East Asian Width](https://www.unicode.org/reports/tr11/), some [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category), and hand-picked adjustments.
 

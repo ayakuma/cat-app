@@ -7,7 +7,7 @@
 
 <!-- TOC -->
 
-- [Introduction](#introduction)
+- [introduction](#introduction)
 - [Synopsis](#synopsis)
 - [File structure](#file-structure)
     - [Implicit namespaces](#implicit-namespaces)
@@ -48,7 +48,7 @@
 <!-- /TOC -->
 
 <a id="markdown-introduction" name="introduction"></a>
-## Introduction
+## introduction
 
 Zeitwerk is an efficient and thread-safe code loader for Ruby.
 
